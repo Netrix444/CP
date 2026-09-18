@@ -1,0 +1,5 @@
+a=input().split()
+b=int(a[0])*int(a[1])*int(a[2])*int(a[3])
+c=str(b)
+c=str(b[-2:])
+print(c)
