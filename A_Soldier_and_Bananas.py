@@ -6,3 +6,5 @@ for i in range(int(a[2])+1):
     s=s+b
     d=s-int(a[1])
 print(d)
+if int(a[1])>=s:
+    print(0)
