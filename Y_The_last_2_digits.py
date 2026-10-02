@@ -1,5 +1,3 @@
 a=input().split()
 b=int(a[0])*int(a[1])*int(a[2])*int(a[3])
-c=str(b)
-c=(b[-2:])
-print(c)
+print(f"{b%100}")
