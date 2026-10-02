@@ -4,3 +4,4 @@ for b in range(a):
     for i in range(1,b):
         b=b*i
     print(b)
+    if b==0:
