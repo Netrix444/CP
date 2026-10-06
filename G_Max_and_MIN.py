@@ -1,5 +1,5 @@
 a=int(input())
-b=input().split()
+b=list(map(int,input().split()))
 c=max(b)
 d=min(b)
 print(d,c)
