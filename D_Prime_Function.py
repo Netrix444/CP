@@ -1,13 +1,12 @@
-a=int(input())
-for b in range(1,a):
-    b=int(input())
-    if b==2:
-        print("YES")
-    elif b>=1:
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    if n < 2:
         print("NO")
-    else:
-        for i in range(2,b):
-            if b/i==0:
-                print("NO")
-            else:
-                print("YES")
+        continue
+    is_p = True
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            is_p = False
+            break
+    print("YES" if is_p else "NO")
