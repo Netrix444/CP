@@ -1,7 +1,7 @@
 x=int(input())
-a=x//10
-b=x%10
-if a//b==0 or b//a==0:
+a=int(x//10)
+b=int(x%10)
+if (b!=0 and a%b==0) or (b%9a==0 and a!=0):
     print("YES")
 else:
     print("NO")
