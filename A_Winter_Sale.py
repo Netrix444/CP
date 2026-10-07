@@ -1,0 +1,5 @@
+a=list(map(int,input().split()))
+dc=int(a[0])
+dp=int(a[1])
+op=dp/(100-dc)
+print(f"{op*100:.2f}")
