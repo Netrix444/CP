@@ -1,5 +1,7 @@
 a=int(input())
 b=list(map(int,input().split()))
+c=0
 for i in range(a):
-    if int(b[i])<=10:
-        print(f"A[{i}] = {b[i]}")
+    if i%2==0:
+        c=c+b[i]
+print(c)
