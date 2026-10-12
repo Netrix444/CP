@@ -1,6 +1,10 @@
-a=int(input())
-for b in range(a):
-    b=input().split()
-    for i in range(int(b[0])+1,int(b[1])) or for i in range(int(b[1])+1,int(b[0])):
-        if i%2!=0:
-            print(i)
+t = int(input())
+for _ in range(t):
+    x, y = map(int, input().split())
+    if x > y:
+        x, y = y, x
+    total = 0
+    for n in range(x + 1, y):
+        if n % 2 == 1:
+            total += n
+    print(total)
