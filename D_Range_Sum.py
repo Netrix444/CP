@@ -4,11 +4,11 @@ for _ in range(a):
     c=int(b[0])
     d=int(b[1])
     if c<d:
-        c=((int(b[0])-1)*int(b[0]))/2
-        d=(int(b[1])*(int(b[1]+1)))/2
+        c=((c-1)*c)//2
+        d=(d*(d+1))//2
         print(int(d-c))
     else:
-        c=(int(b[0])*(int(b[0])+1))/2
-        d=((int(b[1])-1)*int(b[1]))/2
+        c=(c*(c+1))//2
+        d=((d-1)*d)//2
         print(int(c-d))
 
