@@ -1,4 +1,6 @@
 a=int(input())
-for b in range(a):
-    b//10 and b%10
-    print(b)
+for i in range(a):
+   i=int(input())
+   b=i//10
+   c=i%10
+   print(b+c)
