@@ -1,9 +1,9 @@
 a = int(input())
-for i in range(a):
+for _ in range(a):
     b = int(input())
-    c= list(map(int, input().split()))
-    d = max(c)
+    c = list(map(int, input().split()))
+    d = min(c)
     ans = 0
     for x in c:
-        ans += d - x
+        ans += x - d
     print(ans)
